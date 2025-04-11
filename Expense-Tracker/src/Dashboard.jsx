@@ -1,9 +1,10 @@
 import React from "react";
+import UserProfile from "./Components/Profile.jsx";
 
 const navItems = [
   { name: "Home", link: "#home" },
   { name: "Input", link: "#input" },
-  { name: "Profile", link: "#profile" },
+  { name: "Profile", link: <UserProfile/> },
   { name: "Calendar", link: "#calendar" },
   { name: "Report", link: "#report" },
   { name: "Settings", link: "#settings" },
@@ -40,7 +41,7 @@ const Dashboard = () => {
           <div className:search style={{  position:"relative", top:"5px",left:"-20px", display: "flex", alignItems: "center", gap: "10px" }}>
             <input type="text" placeholder="Search" style={{padding: "5px 10px", borderRadius: "20px", border: "1px solid #333" }} />
             <div style={{ width: "20px", height: "20px", borderRadius: "50%", backgroundColor: "#fff", border: "1px solid #333" }}></div>
-            <button style={{ backgroundColor: "#aee2ff", padding: "5px 15px", borderRadius: "20px", border: "1px solid #333" }}>Profile</button>
+            <button style={{ backgroundColor: "#aee2ff", padding: "5px 15px", borderRadius: "20px", border: "1px solid #333" }} onClick={UserProfile}>Profile</button>
           </div>
         </div>
 
@@ -83,3 +84,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
