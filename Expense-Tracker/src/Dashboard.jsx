@@ -1,5 +1,5 @@
 import React from "react";
-import UserProfile from "./Components/Profile.jsx";
+import UserProfile from "./Components/UserProfile";
 
 const navItems = [
   { name: "Home", link: "#home" },
