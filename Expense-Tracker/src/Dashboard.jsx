@@ -1,9 +1,10 @@
 import React from "react";
+import UserProfile from "./Components/Profile.jsx";
 
 const navItems = [
   { name: "Home", link: "#home" },
   { name: "Input", link: "#input" },
-  { name: "Profile", link: "#profile" },
+  { name: "Profile", link: <UserProfile/> },
   { name: "Calendar", link: "#calendar" },
   { name: "Report", link: "#report" },
   { name: "Settings", link: "#settings" },
@@ -13,7 +14,7 @@ const navItems = [
 const Dashboard = () => {
   return (
     
-    <div className:container style={{ display: "flex", backgroundColor: "#f4dec1",width:"100vw", height: "100vh", margin: 0 }}>
+    <div className:container style={{ display: "flex", backgroundColor: "#f4dec1",minWidth:"100vw", minHeight: "100vh", margin: 0 }}>
       <div style={{ width: "180px", backgroundColor: "#2b2927", color: "white", padding: "20px 10px" }}>
         <nav style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           {navItems.map((item) => (
@@ -38,15 +39,21 @@ const Dashboard = () => {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid #aaa", paddingBottom: "10px" }}>
           <h1>Dashboard</h1>
           <div className:search style={{  position:"relative", top:"5px",left:"-20px", display: "flex", alignItems: "center", gap: "10px" }}>
+<<<<<<< HEAD
+            <input type="text" placeholder="Search" style={{padding: "5px 10px", width:"300px",height:"24px",borderRadius: "20px", border: "1px solid #333" }} />
+            <div style={{ width: "35px", height: "35px", borderRadius: "50%", backgroundColor: "#fff", border: "1px solid #333" }}></div>
+            <button style={{ backgroundColor: "#aee2ff", padding: "5px 15px", borderRadius: "20px", border: "1px solid #333",height:"35px",width:"110px" }}>Profile</button>
+=======
             <input type="text" placeholder="Search" style={{padding: "5px 10px", borderRadius: "20px", border: "1px solid #333" }} />
             <div style={{ width: "20px", height: "20px", borderRadius: "50%", backgroundColor: "#fff", border: "1px solid #333" }}></div>
-            <button style={{ backgroundColor: "#aee2ff", padding: "5px 15px", borderRadius: "20px", border: "1px solid #333" }}>Profile</button>
+            <button style={{ backgroundColor: "#aee2ff", padding: "5px 15px", borderRadius: "20px", border: "1px solid #333" }} onClick={UserProfile}>Profile</button>
+>>>>>>> 68b7d8d52b2c0a95e25cd771b2432da818f46b47
           </div>
         </div>
 
         <div style={{ marginTop: "30px" }}>
           <h2>Overview</h2>
-          <button style={{ float: "right", marginTop: "-30px", padding: "5px 10px", borderRadius: "10px", border: "1px solid #999" }}>last 30 days</button>
+          <button style={{ float: "right", marginTop: "-55px", padding: "5px 10px", borderRadius: "10px", border: "1px solid #999" }}>last 30 days</button>
           <div style={{ display: "flex", gap: "20px", marginBottom: "20px" }}>
             <div style={{ backgroundColor: "#d9cebe", padding: "20px", borderRadius: "10px", flex: 1, textAlign: "center" }}>
               <h3>Total Income</h3>
@@ -83,3 +90,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
