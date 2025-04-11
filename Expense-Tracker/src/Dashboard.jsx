@@ -12,8 +12,9 @@ const navItems = [
 
 const Dashboard = () => {
   return (
-    <div style={{ display: "flex", backgroundColor: "#f4dec1", height: "100vh", margin: 0 }}>
-      <div style={{ width: "180vw", backgroundColor: "#2b2927", color: "white", padding: "20px 10px" }}>
+    
+    <div className:container style={{ display: "flex", backgroundColor: "#f4dec1",width:"100vw", height: "100vh", margin: 0 }}>
+      <div style={{ width: "180px", backgroundColor: "#2b2927", color: "white", padding: "20px 10px" }}>
         <nav style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           {navItems.map((item) => (
             <a
@@ -36,8 +37,8 @@ const Dashboard = () => {
       <div style={{ flex: 1, padding: "20px 30px" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid #aaa", paddingBottom: "10px" }}>
           <h1>Dashboard</h1>
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <input type="text" placeholder="Search" style={{ padding: "5px 10px", borderRadius: "20px", border: "1px solid #333" }} />
+          <div className:search style={{  position:"relative", top:"5px",left:"-20px", display: "flex", alignItems: "center", gap: "10px" }}>
+            <input type="text" placeholder="Search" style={{padding: "5px 10px", borderRadius: "20px", border: "1px solid #333" }} />
             <div style={{ width: "20px", height: "20px", borderRadius: "50%", backgroundColor: "#fff", border: "1px solid #333" }}></div>
             <button style={{ backgroundColor: "#aee2ff", padding: "5px 15px", borderRadius: "20px", border: "1px solid #333" }}>Profile</button>
           </div>
