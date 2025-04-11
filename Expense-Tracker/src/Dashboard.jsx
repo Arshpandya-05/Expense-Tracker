@@ -39,15 +39,14 @@ const Dashboard = () => {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid #aaa", paddingBottom: "10px" }}>
           <h1>Dashboard</h1>
           <div className:search style={{  position:"relative", top:"5px",left:"-20px", display: "flex", alignItems: "center", gap: "10px" }}>
-<<<<<<< HEAD
+
             <input type="text" placeholder="Search" style={{padding: "5px 10px", width:"300px",height:"24px",borderRadius: "20px", border: "1px solid #333" }} />
             <div style={{ width: "35px", height: "35px", borderRadius: "50%", backgroundColor: "#fff", border: "1px solid #333" }}></div>
             <button style={{ backgroundColor: "#aee2ff", padding: "5px 15px", borderRadius: "20px", border: "1px solid #333",height:"35px",width:"110px" }}>Profile</button>
-=======
+
             <input type="text" placeholder="Search" style={{padding: "5px 10px", borderRadius: "20px", border: "1px solid #333" }} />
             <div style={{ width: "20px", height: "20px", borderRadius: "50%", backgroundColor: "#fff", border: "1px solid #333" }}></div>
             <button style={{ backgroundColor: "#aee2ff", padding: "5px 15px", borderRadius: "20px", border: "1px solid #333" }} onClick={UserProfile}>Profile</button>
->>>>>>> 68b7d8d52b2c0a95e25cd771b2432da818f46b47
           </div>
         </div>
 
